@@ -34,5 +34,6 @@ public class UserController {
     public ResponseEntity<List<User>> procurarTodos() {
         List<User> users = service.listarTodos();
         return ResponseEntity.status(HttpStatus.OK).body(users);
+        
     }
 }
